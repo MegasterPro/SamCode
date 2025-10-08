@@ -42,7 +42,7 @@
 
 <!-- 🖼️ PROJECT SCREENSHOT -->
 <div align="center">
-  <img src="../../../screen.png" alt="Project Screenshot">
+  <img src="../../screen.png" alt="Project Screenshot">
 </div>
 
 <p>
