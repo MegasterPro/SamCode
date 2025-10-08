@@ -17,7 +17,7 @@
     <a href="https://www.npmjs.com/package/your-package">
       <img src="https://img.shields.io/npm/v/your-package.svg" alt="npm version">
     </a>
-    <a href="https://github.com/your-username/your-repo/blob/main/LICENSE">
+    <a href="https://github.com/MegasterPro/SamCode/blob/main/LICENSE">
       <img src="https://img.shields.io/npm/l/your-package.svg" alt="license">
     </a>
   </p>
