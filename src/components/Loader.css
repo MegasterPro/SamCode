@@ -1,0 +1,50 @@
+:root {
+    --site-accent: #6366F1;
+    --loader-overlay-bg: rgba(7, 10, 25, 0.85);
+}
+
+/* full-screen overlay that centers the animated dot */
+.loader-overlay {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--loader-overlay-bg);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    z-index: 9999;
+    pointer-events: auto; /* block interaction until removed */
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
+}
+
+/* wrapper (first child) — Framer Motion controls transform/borderRadius */
+.loader-overlay > div {
+    will-change: transform, border-radius, opacity;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* inner "ball" styling (second child) — most visual styling is inline in JSX,
+     but keep sensible defaults here so CSS can style if JS-inlines are removed) */
+.loader-overlay > div > div {
+    will-change: transform, background, box-shadow;
+    border-radius: 9999px;
+    width: 48px;
+    height: 48px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.45), 0 0 40px rgba(99,102,241,0.12);
+    background:
+        #0b0c339a
+}
+
+/* respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .loader-overlay,
+    .loader-overlay > div,
+    .loader-overlay > div > div {
+        transition: none !important;
+        animation: none !important;
+    }
+}
