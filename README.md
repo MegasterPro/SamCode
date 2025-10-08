@@ -42,10 +42,8 @@
 
 <!-- 🖼️ PROJECT SCREENSHOT -->
 <div align="center">
-  <img src="../../public/screen.png" alt="Project Screenshot">
+    <img src="https://raw.githubusercontent.com/MegasterPro/SamCode/main/public/screen.png" alt="Project Screenshot" />
 </div>
-
-<p>
   This project is a modern, interactive 3D application for the web. It leverages the power of <strong>Three.js</strong> for rendering, is built on the robust <strong>React</strong> framework, and is powered by the lightning-fast <strong>Vite</strong> build tool.
 </p>
 
