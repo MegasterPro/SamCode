@@ -17,7 +17,7 @@ export default function Projects() {
       title: t('p1Title'),
       description: t('p1Desc'),
       technologies: ['React', 'Three.js', 'Framer Motion'],
-      github: '#'
+      github: 'https://github.com/MegasterPro/SamCode'
     },
     {
       title: t('p2Title'),
