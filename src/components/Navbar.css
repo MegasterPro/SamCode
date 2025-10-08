@@ -1,0 +1,152 @@
+/* Je veux pas une navbar classique, ce que je veux c'est pas de background et les textes sont dans des cubes de memes tailles , transparentes légerement espasées avec une belle bordure et un fin surligné ! De quoi éviter tout confit avec le header ! */
+
+
+
+:root{
+  --accent: #8ab4ff;
+  --text: #0b1220;
+  --muted: rgba(11,18,32,0.6);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root{
+    --accent: #6ee7b7;
+    --text: #e6eef6;
+    --muted: rgba(230,238,246,0.64);
+  }
+}
+
+/* Conteneur transparent, au-dessus du header pour éviter tout conflit */
+.navbar {
+  position: fixed;
+  top: 16px;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background: transparent;
+  pointer-events: auto;
+  padding: 0 20px;
+  transition: top .18s ease, transform .18s ease;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+}
+
+/* Un peu plus compact quand on scrolle */
+.navbar.scrolled {
+  top: 8px;
+}
+
+/* Mise en page du contenu */
+.nav-container{
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  padding: 6px 0;
+}
+
+/* Logo simple, sans fond */
+.logo{
+  color: var(--text);
+  font-weight: 700;
+  text-decoration: none;
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding: 6px 8px;
+  user-select: none;
+}
+
+/* Liens en "cubes" de mêmes tailles */
+.nav-links.desktop,
+.mobile-menu-content{
+  display:flex;
+  gap:12px;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+/* Style commun des "cubes" */
+.nav-link,
+.mobile-nav-link{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width: 120px;       /* même largeur minimale pour l'uniformité */
+  height: 44px;           /* même hauteur */
+  padding: 0 14px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.02);   /* léger transparent */
+  border: 1px solid rgba(255,255,255,0.08); /* belle bordure subtile */
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  transition: transform .14s ease, background .14s ease, box-shadow .14s ease;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* Fin surligné discret (ligne fine gradient) */
+.nav-link::after,
+.mobile-nav-link::after{
+  content: "";
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 8px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity .16s ease, transform .16s ease;
+}
+
+/* Hover : léger soulèvement + apparition du surlignage */
+.nav-link:hover,
+.mobile-nav-link:hover{
+  transform: translateY(-3px);
+  background: rgba(255,255,255,0.04);
+  box-shadow: 0 8px 20px rgba(2,6,23,0.10);
+}
+
+.nav-link:hover::after,
+.mobile-nav-link:hover::after{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Bouton menu mobile */
+.mobile-menu-button{
+  background: transparent;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  cursor: pointer;
+  color: var(--text);
+}
+
+/* Menu mobile flottant (évite conflit visuel avec header) */
+.mobile-menu{
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 18px;
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 10px;
+}
+
+/* Adaptation responsive */
+/* @media (max-width: 880px){
+  .nav-links.desktop{ display: none; }
+  .mobile-menu-content{ flex-direction: column; min-width: 180px; }
+} */
