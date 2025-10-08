@@ -12,7 +12,7 @@
   <!-- Replace placeholders with your actual URLs -->
   <p>
     <a href="hhttps://github.com/MegasterPro/SamCode/actions/workflows/ci.yml">
-      <img src="https://github.com/your-username/your-repo/actions/workflows/ci.yml/badge.svg" alt="build status">
+      <img src="https://github.com/MegasterPro/SamCode/actions/workflows/ci.yml/badge.svg" alt="build status">
     </a>
     <a href="https://www.npmjs.com/package/your-package">
       <img src="https://img.shields.io/npm/v/your-package.svg" alt="npm version">
@@ -42,7 +42,7 @@
 
 <!-- 🖼️ PROJECT SCREENSHOT -->
 <div align="center">
-  <img src="public/screen.png" alt="Project Screenshot">
+  <img src="../../public/screen.png" alt="Project Screenshot">
 </div>
 
 <p>
