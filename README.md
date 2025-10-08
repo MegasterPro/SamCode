@@ -11,7 +11,7 @@
   <!-- 📛 BADGES -->
   <!-- Replace placeholders with your actual URLs -->
   <p>
-    <a href="https://github.com/your-username/your-repo/actions/workflows/ci.yml">
+    <a href="hhttps://github.com/MegasterPro/SamCode/actions/workflows/ci.yml">
       <img src="https://github.com/your-username/your-repo/actions/workflows/ci.yml/badge.svg" alt="build status">
     </a>
     <a href="https://www.npmjs.com/package/your-package">
@@ -27,12 +27,12 @@
   <p align="center">
     A stunning 3D web experience built with React, Vite, and Three.js.
     <br>
-    <a href="https://your-demo-link.com"><strong>View Demo »</strong></a>
+    <a href="https://youtube.com/@SamCodexy"><strong>View Youtube »</strong></a>
     <br>
     <br>
-    <a href="https://github.com/your-username/your-repo/issues">Report Bug</a>
+    <a href="https://github.com/MegasterPro/SamCode/issues">Report Bug</a>
     ·
-    <a href="https://github.com/your-username/your-repo/issues">Request Feature</a>
+    <a href="https://github.com/MegasterPro/SamCode/issues">Request Feature</a>
   </p>
 </div>
 
@@ -42,7 +42,7 @@
 
 <!-- 🖼️ PROJECT SCREENSHOT -->
 <div align="center">
-  <img src="https://via.placeholder.com/800x450.png?text=App+Screenshot+or+GIF" alt="Project Screenshot">
+  <img src="public/screen.png" alt="Project Screenshot">
 </div>
 
 <p>
@@ -90,11 +90,11 @@ Make sure you have Node.js and npm (or yarn/pnpm) installed.
 
 1.  Clone the repo
     ```sh
-    git clone https://github.com/your-username/your-repo.git
+    git clone https://github.com/MegasterPro/SamCode.git
     ```
 2.  Navigate to the project directory
     ```sh
-    cd your-repo
+    cd SamCode
     ```
 3.  Install NPM packages
     ```sh
