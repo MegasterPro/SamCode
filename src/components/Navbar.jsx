@@ -139,8 +139,8 @@ export default function Navbar() {
                 ref={menuRef}
                 className="mobile-menu-content"
                 style={{
-                  background: '#00a4f07a',
-                  borderRadius: 8,
+                  background: '#040013e0',
+                  borderRadius: 15,
                   margin: '0.5rem',
                   padding: '0.75rem'
                 }}
